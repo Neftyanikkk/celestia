@@ -33,7 +33,7 @@ sudo tee /etc/systemd/system/celestia-light.service > /dev/null <<EOF
   After=network-online.target
 [Service]
   User=$USER
-  ExecStart=$(which celestia) light start
+  ExecStart=$HOME/go/bin/celestia light start
   Restart=on-failure
   RestartSec=10
   LimitNOFILE=4096
