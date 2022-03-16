@@ -32,7 +32,7 @@ celestia bridge init --core.remote $TRUSTED_SERVER
 # config 
 sed -i.bak -e 's/PeerExchange = false/PeerExchange = true/g' $HOME/.celestia-bridge/config.toml
 
-BootstrapPeers="[\"/dns4/andromeda.celestia-devops.dev/ip4/164.68.122.127/tcp/2121/p2p/C20FE78E2D4BC3C9AD91329A5878043F759902E2EA92D22F18A300C8C3631A1F\", \"/dns4/libra.celestia-devops.dev/ip4/164.68.122.127/tcp/2121/p2p/C20FE78E2D4BC3C9AD91329A5878043F759902E2EA92D22F18A300C8C3631A1F\", \"/dns4/norma.celestia-devops.dev/ip4/164.68.122.127/tcp/2121/p2p/C20FE78E2D4BC3C9AD91329A5878043F759902E2EA92D22F18A300C8C3631A1F\"]"
+BootstrapPeers="[\"/dns4/andromeda.celestia-devops.dev/ip4/164.68.122.127/tcp/2121/p2p/12D3KooWCYsJUr1PfdAv9cbgDngTVYCPJj51yVqrG65Zj8gzdSnE\", \"/dns4/libra.celestia-devops.dev/ip4/164.68.122.127/tcp/2121/p2p/12D3KooWCYsJUr1PfdAv9cbgDngTVYCPJj51yVqrG65Zj8gzdSnE\", \"/dns4/norma.celestia-devops.dev/ip4/164.68.122.127/tcp/2121/p2p/12D3KooWCYsJUr1PfdAv9cbgDngTVYCPJj51yVqrG65Zj8gzdSnE\"]"
 
 sed -i -e "s|BootstrapPeers *=.*|BootstrapPeers = $BootstrapPeers|" $HOME/.celestia-bridge/config.toml
 
